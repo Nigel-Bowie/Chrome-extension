@@ -33,7 +33,7 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-deleteBtn.addEventListener("dblclick", function() {
+deleteBtn.addEventListener("dblclick", 
 
     // Step 2: Remove the specific item from the array
     function removeItemFromArray(itemToRemove, array) {
