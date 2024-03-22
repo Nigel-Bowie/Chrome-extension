@@ -1,7 +1,7 @@
 /* MOBILE DEVICES */
 :root{
     --BorderRadius: 0.188rem 0.938rem 0.188rem 0.938rem;
-    --RegPadding: 2px;
+    --RegPadding: 5px;
     --LrgPadding: 10px;
     --Border:2px solid #5f9341;
 }
@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:0.5rem;
+    font-size:1rem;
     min-width: 400px;
     max-width: 80vw;
     margin-top: 10vh;
