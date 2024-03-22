@@ -50,8 +50,8 @@ input {
 
 .buttons {
     margin-top: 1rem;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -60,10 +60,10 @@ input {
 button{
     background: #5f9341;
     color: white;
-    padding: var(--RegPadding);
+    padding: 1px;
     border: var(--Border);
     border-radius: var(--BorderRadius);
-    font-weight: bold;
+    text-transform:uppercase;
 }
 
 #delete-btn {
