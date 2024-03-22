@@ -86,8 +86,7 @@ a {
 /* MOBILE VERSION */
 @media only screen and (max-width:480px){
     body{
-        min-width:400px;
-        max-width:440px;
+        width:90%;
         height:100vh;
     }
     .buttons{
