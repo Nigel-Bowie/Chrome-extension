@@ -1,3 +1,4 @@
+/* DESKTOP/LAPTOP VERSION */
 :root{
     --BorderRadius: 0.188rem 0.938rem 0.188rem 0.938rem;
     --RegPadding: 10px;
@@ -84,8 +85,13 @@ a {
 
 /* MOBILE VERSION */
 @media only screen and ( min-width:320px and max-width:768px){
-    min-width: 300px;
-    width: 100%;
-    height:100vh;
+    body{
+        min-width: 300px;
+        width: 100%;
+        height:100vh;
+    }
+    .buttons{
+        flex-direction: column;
+    }
 }
 
