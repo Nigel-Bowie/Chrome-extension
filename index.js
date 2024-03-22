@@ -34,13 +34,18 @@ function render(leads) {
 }
 
 deleteBtn.addEventListener("dblclick", function () {
-        const index = myLeads.indexOf([0])
-        if (index > -1) {
-            myLeads.splice(index, 1)
-            localStorage.setItem('myLeads', JSON.stringify(myLeads))
-            render(myLeads)
-        }
-})
+    // Check if myLeads is not empty
+    if (myLeads && myLeads.length > 0) {
+        // Remove the first element (most recent data)
+        myLeads.splice(0, 1)
+
+        // Save the updated array back to local storage
+        localStorage.setItem('myLeads', JSON.stringify(myLeads))
+
+        // Render the updated data
+        render(myLeads)
+    }
+});
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
