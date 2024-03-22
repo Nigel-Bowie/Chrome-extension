@@ -34,9 +34,24 @@ function render(leads) {
 }
 
 deleteBtn.addEventListener("dblclick", function() {
-    for (let i = 0; i < 1; i++){
-        localStorage.clear(myLeads[0])
+
+    // Step 2: Remove the specific item from the array
+    function removeItemFromArray(itemToRemove, array) {
+        const index = array.indexOf(itemToRemove)
+        if (index > -1) {
+            array.splice(index, 1)
+        }
     }
+    
+    // Example: Removing 'itemToRemove' from 'leadsFromLocalStorage'
+    let itemToRemove = '[0]'
+    removeItemFromArray(itemToRemove, leadsFromLocalStorage)
+    
+    // Step 3: Store the updated array back into local storage
+    localStorage.setItem('myLeads', JSON.stringify(myLeads))
+    
+    // Step 4: Display the remaining items in the array
+    // Example: Displaying remaining items in the console
     render(myLeads)
 })
 
